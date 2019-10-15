@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+main{
+    margin: 40px 0;
+}
+.card__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 30px;
+    background-image: url("../images/kiwi.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.header__text{
+    list-style: none;
+}
+.header__titles{
+    margin-right: 30px;
+}
+.header__title--big{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.header__title--small, .text__item--red{
+    font-size: 18px;
+}
+.header__text p{
+    position: relative;
+    padding-left: 15px;
+}
+.header__text p:after{
+    position: absolute;
+    content: "";
+    top: calc(50% - 3px);
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+.text__item--red{
+    margin-bottom: 15px;
+}
+.text__item--red:after{
+    background-color: #f12b2b;
+}
+.text__item--blue:after{
+    background-color: #1fd7e8;
+}
+.header__discount{
+    margin-left: auto;
+    padding: 30px 18px;
+    color: #fff;
+    background-color: #ff8758;
+    border-radius: 50%;
+}
+.header__discount--span{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__items{
+    display: flex;
+    width: 43%;
+    justify-content: space-between;
+}
+.footer__item{
+    position: relative;
+    padding-left: 50px;
+}
+.footer__item:after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 1px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}

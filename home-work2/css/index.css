@@ -1,0 +1,161 @@
+@font-face{
+    src: url(../fonts/MuseoSansRounded-100.otf) format('truetype');
+    font-weight: 100;
+    font-family: Museo;
+}
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Museo", sans-serif;
+}
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+main{
+    padding: 100px 0;
+    height: 100vh;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    color:#e1e1e1;
+}
+.nike{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0 20px 35px;
+    background-color: #111a28;
+    border-radius: 12px;
+}
+.nike:after{
+    position: absolute;
+    content: "";
+    top: 6%;
+    left: 4%;
+    width: 9%;
+    height: 8%;
+    background-image: url("../images/logo.png");
+}
+.nike__color-radio{
+    align-items: flex-end;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+.nike__about{
+    width: 35%;
+}
+.nike__about__title{
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+.nike__about__text{
+    position:relative;
+    margin-bottom: 27px;
+    padding-bottom: 40px;
+}
+.nike__about__text:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/stars.png");
+    background-size: cover;
+    width: 35%;
+    height: 25%;
+}
+.nike__input__size, .nike__input__qty, .nike__about__text, .nike__about__button{
+    font-size: 15px;
+    color: #b4b6b8;
+}
+.nike__input__size, .nike__input__qty{
+    margin-bottom: 30px;
+    padding: 7px 10px;
+    outline: none;
+    width: 35%;
+    background-color: transparent;
+    font-family: "Museo", sans-serif;
+    border: 1px solid #4f5560;
+}
+.nike__input__size, .nike__input__qty option{
+    background-color: #111a28;
+}
+.nike__about__button{
+    margin-bottom:50px;
+    padding: 13px 0;
+    width: 90%;
+    background-color: #202835;
+    border: 1px solid #4f5560;
+}
+.nike__color-radio input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 0 3px;
+}
+.nike__color-radio input + label {
+    position: relative;
+    padding: 0 0 20px 20px;
+    cursor: pointer;
+}
+.nike__color-radio input + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.nike__color__radio--grey + label:before{
+    background-color: #1f273f;
+}
+.nike__color__radio--white + label:before{
+    background-color: #fff;
+}
+.nike__color__radio--red + label:before{
+    background-color: #ed3333;
+}
+.nike__color__radio--blue + label:before{
+    background-color: #29e3ea;
+}
+.nike__color-radio input:checked + label:before {
+    margin: -4px 0 0 -4px;
+    padding: 2px;
+    border: 2px solid #7e838b;
+}
+.nike__color-radio input + label:after, .nike__color__radio--white + label:after, .nike__color__radio--red + label:after, .nike__color__radio--blue + label:after{
+    opacity: 0;
+    position: absolute;
+    content: "";
+    height: 155px;
+    width: 328px;
+    bottom: 100px;
+}
+.nike__color__radio--grey + label:after{
+    background-image: url(../images/Nike-SB-Stefan-Janoski-Max.png);
+    left: -130px;
+}
+.nike__color__radio--red + label:after{
+    background-image: url(../images/Nike-SB-Stefan-Janoski-Max1-red.png);
+    left: -170px;
+}
+.nike__color__radio--white + label:after{
+    background-image: url(../images/Nike-SB-Stefan-Janoski-Max1-white.png);
+    left: -150px;
+}
+.nike__color__radio--blue + label:after{
+    background-image: url("../images/Nike-SB-Stefan-Janoski-Max1-blue.png");
+    left: -190px;
+}
+.nike__color-radio input:checked + label:after{
+    opacity: 1;
+}
+
